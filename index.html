@@ -4,8 +4,10 @@
 <title>Hello Mesh </title>
 <meta charset="utf-8"> 
 <style>
--webkit-touch-callout: none;
--webkit-user-select: none; /* Disable selection/copy in UIWebView */
+    body {
+      -webkit-touch-callout: none;
+      -webkit-user-select : none;
+    }
 </style>
 </head>
 
@@ -128,7 +130,7 @@
 <canvas id="myGLCanvas" width="1000" height="800"></canvas>
     <form id="input_form">
         <fieldset>
-            <legend>Frame Parameters v1.0</legend>
+            <legend>Frame Parameters v1.1</legend>
             <input type="radio" name="primitive" id="wireframe" value="wireframe"> Wireframe
             <input type="radio" name="primitive" id="polygon" id="polygon" value="polygon" checked> Polygon
             <input type="radio" name="primitive" id="wirepoly" value="wirepoly" > Polygon with Edges  
