@@ -140,12 +140,12 @@ function setupPromise(filename, face) {
 
 function setupTextures() {
   cubeMap = gl.createTexture();
-  setupPromise("pos-z.png", 0);
-  setupPromise("neg-z.png", 1);
-  setupPromise("pos-y.png", 2);
-  setupPromise("neg-y.png", 3);
-  setupPromise("pos-x.png", 4);
-  setupPromise("neg-x.png", 5);
+  setupPromise("pos-z.jpg", 0);
+  setupPromise("neg-z.jpg", 1);
+  setupPromise("pos-y.jpg", 2);
+  setupPromise("neg-y.jpg", 3);
+  setupPromise("pos-x.jpg", 4);
+  setupPromise("neg-x.jpg", 5);
 }
 
 function handleTextureLoaded(image, face) {
@@ -587,6 +587,30 @@ function handleKeyDown(event) {
       teapotY -= 0.1 * teapot_mov_scale;
   }
     
+}
+
+function TdownButton() {
+  teapotX += 0.1 * teapot_mov_scale;
+}
+
+function TupButton() {
+  teapotX -= 0.1 * teapot_mov_scale;
+}
+
+function TrightButton() {
+  teapotY += 0.1 * teapot_mov_scale;
+}
+
+function TleftButton() {
+  teapotY -= 0.1 * teapot_mov_scale;
+}
+
+function rightButton() {
+  eulerY += 1;
+}
+
+function leftButton() {
+  eulerY -= 1;
 }
 
 function handleKeyUp(event) {

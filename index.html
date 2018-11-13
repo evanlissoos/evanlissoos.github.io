@@ -121,7 +121,7 @@
 <script src="skybox.js"></script>
 <script src="mp3.js"></script>   
 <body onload="startup();">
- <canvas id="myGLCanvas" width="1200" height="600"></canvas>
+<canvas id="myGLCanvas" width="1000" height="800"></canvas>
     <form id="input_form">
         <fieldset>
             <legend>Frame Parameters</legend>
@@ -138,11 +138,12 @@
         </fieldset>
     </form>
     <div>
-        <h3> Controls </h3>
-        <p>Use A and D to increase/decrease the spin momentum in a given direction around the teapot</p>
-        <p>Use the arrow keys to increase/decrease the spin momentum of the teapot itself</p>
-        <p> </p>
-        <p>Well... I tried to make my own cube map ¯\_(ツ)_/¯</p>
+        <h4> Rotate Around Teapot </h4>
+        <button type="button" onclick="leftButton()">Left</button><button type="button" onclick="rightButton()">Right</button>
+        <h4> Rotate Teapot Itself</h4>
+        <button type="button" onclick="TupButton()">Up</button><p></p>
+        <button type="button" onclick="TleftButton()">Left</button><button type="button" onclick="TrightButton()">Right</button><p></p>
+        <button type="button" onclick="TdownButton()">Down</button>
     </div>
 </body>
 
