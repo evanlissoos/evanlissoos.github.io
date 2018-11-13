@@ -618,14 +618,6 @@ function handleKeyUp(event) {
   currentlyPressedKeys[event.key] = false;
 }
 
-function handleTouchDown(event) {
-  eulerY += 1;
-}
-
-function handleTouchUp(event) {
-  eulerY -= 1;
-}
-
 function setupSkyBox() {
   mySkyBox = new SkyBox();
   mySkyBox.loadBuffer();
@@ -649,8 +641,6 @@ function setupSkyBox() {
   gl.depthFunc(gl.LEQUAL);
   document.onkeydown = handleKeyDown;
   document.onkeyup = handleKeyUp;
-  document.ontouchstart = handleTouchDown;
-  document.ontouchend = handleTouchUp;
   tick();
 }
 
@@ -674,6 +664,5 @@ function tick() {
     requestAnimFrame(tick);
     //animate();
     draw();
-    //console.log(rMatrix);
 }
 
