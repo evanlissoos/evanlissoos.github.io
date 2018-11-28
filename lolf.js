@@ -140,12 +140,12 @@ function setupPromise(filename, face) {
 
 function setupTextures() {
   cubeMap = gl.createTexture();
-  setupPromise("f.jpeg", 0);
-  setupPromise("f.jpeg", 1);
-  setupPromise("f.jpeg", 2);
-  setupPromise("f.jpeg", 3);
-  setupPromise("f.jpeg", 4);
-  setupPromise("f.jpeg", 5);
+  setupPromise("a.jpeg", 0);
+  setupPromise("a.jpeg", 1);
+  setupPromise("a.jpeg", 2);
+  setupPromise("a.jpeg", 3);
+  setupPromise("a.jpeg", 4);
+  setupPromise("a.jpeg", 5);
 }
 
 function handleTextureLoaded(image, face) {
